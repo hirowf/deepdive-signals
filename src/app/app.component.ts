@@ -1,12 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ChangeDetectionComponent } from './change-detection/change.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  imports: [ChangeDetectionComponent],
+  template: `<change-detection />`,
 })
-export class AppComponent {
-  title = 'signals-deepdive';
-}
+export class AppComponent {}
